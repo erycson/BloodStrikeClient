@@ -1,0 +1,71 @@
+array (
+  'browser' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'stack' => 'TypeError: Error #1009
+	at lobby.controller::RechargeCommand/callJS()
+	at lobby.controller::RechargeCommand/execute()
+	at org.puremvc.as3.multicore.core::Controller/executeCommand()
+	at org.puremvc.as3.multicore.patterns.observer::Observer/notifyObserver()
+	at org.puremvc.as3.multicore.core::View/notifyObservers()
+	at org.puremvc.as3.multicore.patterns.facade::Facade/notifyObservers()
+	at org.puremvc.as3.multicore.patterns.facade::Facade/sendNotification()
+	at ApplicationFacade/sendNotification()
+	at org.puremvc.as3.multicore.patterns.observer::Notifier/sendNotification()
+	at lobby.controller::ConnectionClosedCommand/execute()
+	at org.puremvc.as3.multicore.core::Controller/executeCommand()
+	at org.puremvc.as3.multicore.patterns.observer::Observer/notifyObserver()
+	at org.puremvc.as3.multicore.core::View/notifyObservers()
+	at org.puremvc.as3.multicore.patterns.facade::Facade/notifyObservers()
+	at org.puremvc.as3.multicore.patterns.facade::Facade/sendNotification()
+	at ApplicationFacade/sendNotification()
+	at org.puremvc.as3.multicore.patterns.observer::Notifier/sendNotification()
+	at lobby.model::SocketProxy/onMainClose()
+	at flash.events::EventDispatcher/dispatchEvent()
+	at lobbyNet::TcpSocket/onClosed()',
+  'method' => 'addHallLog',
+  'cpu' => 'x86',
+  'platform' => 'bz',
+  'lang' => 'pt',
+  'errorID' => '1009',
+  'username' => 'U10018957263',
+  'gameVersion' => 'abroad_2015_10_28_bz_20160218020034',
+  'os' => 'Windows 10',
+  'serverID' => '999',
+  'flashPlayer' => 'WIN 22,0,0,192',
+  'log' => '[C] Console v2.6 build 611. PlugIn WIN 22,0,0,192.[C] Remoting started. channel:_Console (remote)[loadRes] resConfigXML[loadRes] config/res_config_067df6df4a553044454c09e764c47f95.xml[Notification] LOAD_RESCONFIG params: null[Notification] START_UP params: {Lobby instance9}[loadRes] item load complete : http://127.0.0.1/cdn/brazil/s3/config/res_config_067df6df4a553044454c09e764c47f95.xml?version=1 [][loadRes] onLoadResComplete[loadRes] I18N[loadRes] config/i18n_a8650e17de48acd2b54fdcf9034aa3ee.txt[loadRes] template/GameData_f9ca1ed4c4ff9ece92a152e20a639f01.swf[loadRes] config/dirtyWords_7aad5cb93467675055e0e3a5f9c40cb2.zip[Notification] LOAD_PREDATA params: null[Notification] LOAD_RES_COMPLETE params: null[loadRes] item load complete : http://127.0.0.1/cdn/brazil/s3/config/i18n_a8650e17de48acd2b54fdcf9034aa3ee.txt?version=1 [][loadRes] item load complete : http://127.0.0.1/cdn/brazil/s3/template/GameData_f9ca1ed4c4ff9ece92a152e20a639f01.swf?version=1 [][loadRes] item load complete : http://127.0.0.1/cdn/brazil/s3/config/dirtyWords_7aad5cb93467675055e0e3a5f9c40cb2.zip?version=1 [][loadRes] load bytes : template/GameData_f9ca1ed4c4ff9ece92a152e20a639f01.swf [][loadRes] load bytes complete: template/GameData_f9ca1ed4c4ff9ece92a152e20a639f01.swf [][loadRes] onLoadResComplete[-] init pre data[-] init game data[Notification] BOOTSTRAP_MODELS params: null[Notification] register_plateform_statistic params: {Object}[-] connect ip:127.0.0.1 port:4000[Notification] TRY_LOGIN params: null[Notification] CONNECT_LOGIN_SERVER params: null[Notification] CHECK_FLASH_PLAYER_VERSION params: null[Notification] INIT_GAMEDATA params: null[Notification] LOAD_PREDATA params: null[Notification] LOAD_RES_COMPLETE params: null[remote] callRemote: syncServerTime params: null[remote] callRemote: login params: [0, U10018957263, 1, 1464785590, 33a66c47862a653433d58b3acfa77a07, 1, ][Notification] REQUIRE_LOGIN params: null[Notification] RECONNECT_CLOSE params: null[-] connect success ip:127.0.0.1 port:4000[Notification] SERVER_TIME_SYCHRONIZED params: null[remote] callBack: callBackSyncServerTime params: [1467205627635, -10800000][Notification] UPDATE_STORAGE_VIEW params: null[Notification] ACTIVITY_CLOSED params: [][Notification] UPDATE_ACTIVITY_RECORD params: null[Notification] CREATE_ROLE params: null[Notification] LOGIN_SUCCESS params: {Object}[remote] callBack: callBackLoginSuccess params: [{UserInfo}][remote] callRemote: checkPlayerName params: [0, asdasds][C] TypeError: Error #1009
+	at lobby.controller::CreateRoleResultCommand/execute()
+	at org.puremvc.as3.multicore.core::Controller/executeCommand()
+	at org.puremvc.as3.multicore.patterns.observer::Observer/notifyObserver()
+	at org.puremvc.as3.multicore.core::View/notifyObservers()
+	at org.puremvc.as3.multicore.patterns.facade::Facade/notifyObservers()
+	at org.puremvc.as3.multicore.patterns.facade::Facade/sendNotification()
+	at ApplicationFacade/sendNotification()
+	at lobbyNet.logic::ServersLogic/callBackCreateCharacter()
+	at lobbyNet::RpcManager/packetHandler()
+	at flash.events::EventDispatcher/dispatchEvent()
+	at lobbyNet::TcpSocket/onPacket()
+	at lobbyNet::TcpSocket/recvData()[Notification] SHOW_EXPIRED_ITEM_PANEL params: null[error] TypeError: Error #1009
+	at lobby.controller::RechargeCommand/callJS()
+	at lobby.controller::RechargeCommand/execute()
+	at org.puremvc.as3.multicore.core::Controller/executeCommand()
+	at org.puremvc.as3.multicore.patterns.observer::Observer/notifyObserver()
+	at org.puremvc.as3.multicore.core::View/notifyObservers()
+	at org.puremvc.as3.multicore.patterns.facade::Facade/notifyObservers()
+	at org.puremvc.as3.multicore.patterns.facade::Facade/sendNotification()
+	at ApplicationFacade/sendNotification()
+	at org.puremvc.as3.multicore.patterns.observer::Notifier/sendNotification()
+	at lobby.controller::ConnectionClosedCommand/execute()
+	at org.puremvc.as3.multicore.core::Controller/executeCommand()
+	at org.puremvc.as3.multicore.patterns.observer::Observer/notifyObserver()
+	at org.puremvc.as3.multicore.core::View/notifyObservers()
+	at org.puremvc.as3.multicore.patterns.facade::Facade/notifyObservers()
+	at org.puremvc.as3.multicore.patterns.facade::Facade/sendNotification()
+	at ApplicationFacade/sendNotification()
+	at org.puremvc.as3.multicore.patterns.observer::Notifier/sendNotification()
+	at lobby.model::SocketProxy/onMainClose()
+	at flash.events::EventDispatcher/dispatchEvent()
+	at lobbyNet::TcpSocket/onClosed() []',
+  'errorSequence' => '2',
+  'serverName' => '',
+  'time' => 'Wed Jun 29 10:07:36 GMT-0300 2016',
+  'message' => 'Error #1009',
+)
